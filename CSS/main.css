@@ -1,0 +1,176 @@
+
+/* Main Page Starts */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Verdana', 'Arial';
+}
+
+td {
+    text-align: center;
+}
+
+#toolbar {
+position: fixed;
+background: #2980B9;
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    z-index: 1;
+}
+
+#hamburguer {
+display: inline-block;
+    font-size: 25pt;
+    position: relative;
+    top: -2px;
+    padding: 0px 15px 0 15px;
+    color: white;
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
+}
+
+#stats {
+    color: white;
+display: inline-block;
+}
+
+#stats tr:first-child {
+font-size: 15pt;
+    font-weight: bold
+}
+
+#stats tr:nth-child(2) {
+font-size: 8pt;
+font-weight: bold;
+}
+
+span.flex {
+flex: auto;
+}
+
+#user {
+    color: white;
+    font-size: 11pt;
+}
+
+#user tr:first-child {
+    color: green;
+}
+
+.tabs {
+    display: inline-flex;
+}
+
+.tabselected {
+    background: white;
+    color: #48AEFF;
+}
+
+.tablholder {
+    position: relative;
+display: block;
+background: white;
+}
+
+.tabs {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    color: white;
+}
+
+.tabs * {
+    flex: auto;
+    background: #48AEFF;
+    width: auto;
+    text-align: center;
+    display: flex;
+    padding: 10px 20px 10px 20px;
+}
+
+.tabfocused {
+    color: #48AEFF;
+    background: white;
+}
+
+.tabcontent {
+    padding: 5px;
+color: black;
+/*height: 200px;*/
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.leadinput {
+    width: calc(33% - 3px);
+}
+
+#hbbutton {
+    z-index: 2;
+    position: fixed;
+    top: 39px;
+    left: 19px;
+    background: white;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#hbbutton a {
+    width: 150px;
+    padding: 5px 20px 5px 10px;
+    padding: 5px;
+    display: block;
+}
+
+#hbbutton a:hover {
+    background: #48AEFF;
+    color: white;
+}
+
+label {
+font-size: 9pt;
+    margin-left: 4px;
+    margin-top: 5px;
+}
+
+input {
+    font-size: 13pt;
+}
+
+select {
+    padding: 4px 6px 4px 6px;
+    margin-right: 4px;
+}
+#main {
+    width:100%;
+    height:100vh;
+}
+
+#leadinfo { 
+    width:75%;
+}
+#sidebar {}
+
+#maintabs {
+    width: 100%;
+    height:100%;
+}
+#tabs {
+    height:50px;
+}
+#sidebarcontent {
+    height:100%;
+    width:100%;
+}
+#leadtable {
+    width:100%;
+    height:100%;
+}
+#sidebartable {
+    width:100%;
+    height:100%;
+}

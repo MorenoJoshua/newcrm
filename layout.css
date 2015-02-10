@@ -1,0 +1,365 @@
+
+/*////////////////////////////////*/
+/*MAIN STYLE*/
+body {
+background: #E9EAED;
+}
+* {
+	/*border: 1px solid red;*/
+	margin: 0;
+	padding: 0;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+#main {
+	width:100%;
+	height:100vh;
+}
+/*////////////////////////////////*/
+/*TOOLBAR STARTS*/
+#toolbar{
+/*display: flex;*/
+position: fixed;
+height:50px;
+background: #005DAB;
+/*position: fixed;*/
+width: 100%;
+/*height: auto;*/
+top: 0;
+left: 0;
+z-index: 1;
+flex-wrap: nowrap;
+display: inline-flex;
+align-items: center;
+z-index: 1;
+}
+span.flex {
+flex: auto;
+}
+#stats {
+text-align: center;
+color: white;
+/*padding: 30px;*/
+margin-right: 2px;
+font-weight: 700;
+text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+}
+#statstop td { 
+text-align: center;
+padding-right: 1vw; }
+#statsbottom td {
+text-align: center;
+padding-right: 1vw;
+}
+/*////////////////////////////////*/
+/*DROP DOWN BUTTON STARTS (HAMBURGER)*/
+#hamburger {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 25pt;
+	font-weight: 700;
+	margin-left: 20px;
+margin-bottom: 9px;
+	color: white;
+text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+	display: block;
+cursor:pointer;
+width: 25px;
+}
+#hamburgerin {
+font-family: Verdana, Geneva, sans-serif;
+	color: black;
+	font-size: 25pt;
+	font-weight: 700;
+	margin-left: 20px;
+	display: block;
+cursor:pointer;
+}
+#hbbutton {
+	position: absolute;
+	z-index: 10;
+	top: 1px;
+	left: 0px;
+	background: white;
+	box-shadow: 0px 3px 8px rgba(0,0,0,0.3)
+}
+#hbbutton a {
+width: 120px;
+padding: 5px 20px 5px 10px;
+padding: 5px;
+display: block;
+text-decoration: none;
+color: #292221; 
+}
+#hbbutton a:hover {
+background: #292221;
+color: white; 
+text-decoration: none;
+transition: 0.5s; 
+}
+#hbtext {
+
+font-weight: 700;
+margin-left: 20px;
+}
+/*////////////////////////////////*/
+/*USER STARTS*/
+#profilepic {
+width: 50px;
+height: 50px;
+background: red;
+}
+#welcome {
+	font-weight: 500;
+	color: white;
+	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+}
+#signout { 
+	text-align: right;
+	font-weight: 500;
+	color: white;
+	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+}
+/*////////////////////////////////*/
+/*SEARCH BAR*/
+#toolbarsearch {
+margin: 0 28px 0 28px;
+width: calc(100% - (28px * 2));
+height: 30px;
+border: 0px solid transparent;
+border-radius: 2px;
+padding-left: 8px;
+}
+#searchresults {
+padding-top: 55px;
+}
+#spacer {
+height: 55px;
+}
+#searchtable {
+background: #ffffff;
+position: absolute;
+left: 50%;
+transform: translatex(-50%);
+}
+#searchtable table tr:nth-child(odd) {
+background: #ccc;
+}
+#searchtable table tr:nth-child(even) {
+background: #eee;
+}
+/*////////////////////////////////*/ 
+/*SIDE BAR STARTS*/
+#sidebar {
+/*width:20%;*/
+}
+#sidebarcontent {
+margin-top: -5px;
+	height:100%;
+	width:100%;
+}
+#sidebartable {
+	width:100%;
+	height:100%;
+}
+/*////////////////////////////////*/
+/*INPUT SIZE TABLE */
+label, input {
+width:calc(100% - 5px);
+display:block;
+margin: 0;
+padding: 0;
+}
+label {
+height:40%;
+font-size:12pt;
+color: #444;
+}
+input {
+height:60%;
+font-size:10.5pt;
+}
+input:focus {
+background: #F8F8FF;
+	outline: 0;
+border-style: solid;
+border-color: #888888;
+transition: 1s ;
+}
+select {
+width:100%;
+padding-top: 11px;
+padding-bottom: 11px;
+}
+/*INPUT SIZE TABLE */
+/*////////////////////////////////*/
+#leadinfo { 
+width:75%;
+background: #fff;
+height: calc(100vh - 50px);
+}
+#maintabs {
+	width: 100%;
+	height:100%;
+}
+#tabs {
+	height:50px;
+	 font-weight: 900;
+}
+#leadtable {
+	width:100%;
+	height:100%;
+}
+#leadtable tr {
+height: calc( 100% / 8 )
+}
+#owner1table, #owner2table {
+width: 100%;
+height:100%;
+}
+/*////////////////////////////////*/
+#tabs {
+background: #A6D8F0;
+}
+.tabselected {
+transition: 0.2s;
+background: white;
+color: black !important;
+text-shadow: 0px 1px 2px rgba(0, 0, 0, 0)!important;
+}
+.tabselected:hover {
+background-color: white!important;
+color: black !important;
+}
+.tabs {
+height: 50px;
+cursor: pointer;
+color: white;
+text-align: center;
+text-shadow: 0px 1px 2px #005ACB;
+}
+.tabs:hover {
+transition: 0.2s;
+background-color: #397FF3;
+color: white !important;
+}
+.tabs:after {
+font-size: 10px;
+margin-left: 10px;
+content:'►';
+}
+.tabselected:after {
+content:'▼' ;
+}
+/*////////////////////////////////*/
+/*SIDE BAR STARTS*/
+#sidebarphone {
+height: 50px;
+text-align: center;
+}
+#sidebarphone td[colspan="3"] {
+background: #fff;
+font-size: 22pt;
+}
+#sidebarphone #call {
+background: #0c3;
+}
+#call a {
+color: #fff;
+font-size: 13pt;
+text-decoration: none;
+}
+#saveanddispo {
+cursor: pointer;
+color: white;
+background: #61D125;
+padding: 10px;
+display: block;
+max-width: 100%;
+text-align: center;
+vertical-align: middle;
+}
+#callstable {
+width: 100%;
+font-size: 9pt;
+display: block;
+background: #fff;
+}
+#audio {
+width: 100%;
+display: block;
+}
+#comments {
+font-size: 9pt;
+width: 100%;
+background: #e30;
+}
+#lightbox {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.8);
+}
+#lbcontent {
+position: absolute;
+top: 50%;
+left: 50%;
+padding: 20px;
+background: #fff;
+transform: translateX(-50%) translateY(-50%);
+}
+#closelb {
+background: #f00;
+border-radius: 100%;
+color: white;
+width: 20px;
+height: 20px;
+text-align: center;
+box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+float: left;
+}
+/*////////////////////////////////*/
+/* CALLS CSS */
+#callsmain {
+width: 100%;
+height: 100vh;
+}
+#callstable {
+vertical-align: top;
+}
+#callstable table {
+text-decoration: none;
+font-size: 12pt;
+width: 80%;
+position: absolute;
+top: 55px;
+left: 50%;
+transform: translateX(-50%);
+}
+#callstable table tr:nth-child(odd) {
+background: #ccc;
+}
+#callstable table tr:nth-child(even) {
+background: #eee;
+}
+#encabezado {
+background-color: #363F45!important;
+color: #D9DEE1;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+
+#saveprogress {
+    position: absolute;
+    background: #00BB0A;
+    top: 50px;
+    left: 0;
+    text-align: center;
+    width: 150px;
+    z-index: 200;
+    color: #fff;
+    padding: 15.5px;
+    border: 0;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.3);
+    border-radius: 0 10px 10px 0;
+}

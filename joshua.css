@@ -1,0 +1,22 @@
+* {
+	/*border: 1px solid red;*/
+}
+
+#dispodate, #dispotime {
+font-size: 25pt;
+text-align: center;
+}
+
+
+#nocallback {
+	background: #810;
+}
+
+#yescallback{
+	background: #180;}
+
+	#nocallback, #yescallback {
+		border: 0;
+		color: #fff;
+		padding: 5px;
+	}

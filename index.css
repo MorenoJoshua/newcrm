@@ -1,0 +1,96 @@
+*{
+	/*border: 1px solid red;*/
+    margin:0;
+    padding: 0;
+}
+body{
+
+	background: #D9DBD4;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+
+
+#table {
+
+    z-index: 1;
+	text-align: center;
+	border-radius: 2px;
+	background: #FEFEFE;
+	color: #2B2B2B;
+    font-weight: 700;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+
+}
+
+#titlebox {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+	background: 
+}
+
+#title {
+    
+	font-size: 30px;
+	background: #041B83;
+    /*margin: 20px;*/
+}
+    #spacer{
+        height: 20px;
+    }
+#loginbutton {
+
+    margin-top: 40px;
+    margin-bottom: 20px;
+     margin-left: 58%;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: white;
+    padding: 10px;
+    border: 0px solid;
+    background: #041B83;
+    left: -80px;
+
+}
+
+#textcolor {
+font-size: 14pt;
+
+}
+
+
+
+#textbar {
+
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+width: 160px;
+height: 30px;
+background: #EEEEEE;
+    outline: 0;
+}
+
+#textbar:focus {
+
+    background: #F8F8FF;
+    outline: 0;
+    border-style: solid;
+    border-color: #888888;
+    transition: 1s ;
+
+}
+
+#logo {
+
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
